@@ -56,6 +56,9 @@ const countSameNumbers = (): number => {
 };
 
 const printResult = (): void => {
+  const wylosowane = randomNumbers.toString();
+  console.log('yours numbers '+randomNumbers.sort((a,b)=> a > b ? 1:-1));
+  console.log('drawn numbers '+chosenNumbers.sort((a,b)=> a > b ? 1:-1));
   console.log(`You have ${countSameNumbers()} correct numbers`);
 };
 
